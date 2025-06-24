@@ -3,7 +3,7 @@ import json
 from flask import Flask, render_template, request, redirect, session, url_for, flash
 
 app = Flask(__name__)
-app.secret_key = 'j348fdu4hd2jke3hs9'  # 환경변수 등에서 관리 권장
+app.secret_key = 'j348fdu4hd2jkehs9'  # 환경변수 등에서 관리 권장
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 USERS_FILE = os.path.join(BASE_DIR, 'data', 'users.json')

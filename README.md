@@ -10,7 +10,7 @@
 
 - ## Requirements  
 
-    > Python version : 3.13.5
+    > Python version : 3.9.8
 
     ```cmd
     pip install flask jinja2

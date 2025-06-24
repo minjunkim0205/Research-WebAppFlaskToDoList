@@ -1,0 +1,25 @@
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Overview</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <form method="POST" action="/add">
+        <input type="text" name="task" placeholder="할일">
+        <input type="date" name="date">
+        <input type="time" name="start_time">
+        <input type="time" name="end_time">
+        <button type="submit">저장하기</button>
+    </form>
+
+    <ul>
+        {% for t in tasks %}
+        <li>{{ t.date }}: {{ t.task }} ({{ t.start_time }} - {{ t.end_time }})</li>
+        {% endfor %}
+    </ul>
+
+</body>
