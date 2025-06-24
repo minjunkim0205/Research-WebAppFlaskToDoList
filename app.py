@@ -3,7 +3,7 @@ import sqlite3
 from flask import Flask, render_template, request, redirect, session, url_for, flash, g
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # 꼭 환경변수 등으로 관리하세요
+app.secret_key = 'sa78dh2hs91hj879sdh1sdh1'  # 배포시 주의
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATABASE = os.path.join(BASE_DIR, 'data', 'app.db')
