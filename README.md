@@ -13,9 +13,10 @@
     > Python version : 3.9.8
 
     ```cmd
-    pip install flask jinja2
+    pip install -r requirements.txt
     ```
 
 - ## Note
 
-    > [SCHEDULE](./SCHEDULE.md)
+    > [StudyGuide](./StudyGuide/StudyGuide.md)
+    > pip freeze > requirements.txt
